@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+  <head>
+    <!--
+        ░░░░░░░░░▄░░░░░░░░░░░░░░▄
+        ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌ Wow
+        ░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐
+        ░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐
+        ░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐
+        ░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌
+        ░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌ so source
+        ░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐
+        ░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌
+        ░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌
+        ▌▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐
+        ▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+        ▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐
+        ░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌
+        ░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐ y u view this?
+        ░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌
+        ░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀
+        ░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀
+        ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀ much code
+-->
+
+    <!-- Site Behavior tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image" href="images/bitconnect.png" />
+    <script src="script.js"></script>
+    <title>DolphCoin</title>
+  </head>
+  <body>
+    <img id="logo" src="images/catto.png" alt="Catto temp logo" />
+
+    <div>click on me bro</div>
+  </body>
+
+  <script>
+    alert("Tryna get rich eh?");
+
+    let inputX = prompt("Enter how much mAney you have", undefined);
+    let inputY = prompt("Enter how much mAney you want", undefined);
+
+    let x = Number(inputX);
+    let y = Number(inputY);
+
+    let sum = x + y;
+
+    alert(`That's how much maney you'll earn if you buy DolphCoin, bro: ${sum}$
+    You are welcome`);
+
+    // let value = prompt("Write something here", "Write here, dummy");
+    // console.log(`You entered - ${value}`);
+
+    let div = document.querySelector("div");
+    div.addEventListener("click", function () {
+      div.innerText =
+        "Send your ETH here, and get DolphCoin in return, ez mAney - 0x8d2d1355d1C5F1D29Cba2c47206Ff670aB0B3c1b";
+    });
+  </script>
+
+  <a href="javascript:void(0);">
+    <img id="bogged" src="images/bogged.png" />
+  </a>
+
+  <!--- TODO: Put this in some nice CSS --->
+  <style type="text/css">
+    img#bogged {
+      position: fixed;
+      bottom: -75px;
+      margin: 0;
+      right: 10%;
+      transition-property: bottom;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+    }
+
+    img#bogged:hover {
+      bottom: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      img#bogged {
+        display: none;
+      }
+    }
+  </style>
+</html>
